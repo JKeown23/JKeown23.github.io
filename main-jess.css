@@ -1,0 +1,421 @@
+body {
+	padding: 0;
+	margin: 0;
+	/*Off-white*/
+	color: #f2f6e9;
+
+	/*Dark Bluelue:*/
+	background: #5D737E;
+
+}
+
+/*--- navigation bar ---*/
+
+.navbar {
+	background: #09293B;
+}
+
+.nav-link,
+.navbar-brand {
+	color: #fff;
+	cursor: pointer;
+}
+
+.nav-link {
+	margin-right: 1em !important;
+}
+
+.nav-link:hover {
+	color: #000;
+}
+
+.navbar-collapse {
+	justify-content: flex-end;
+}
+
+/*--- header ---*/
+
+.header {
+	background-size: contain;
+	background-position: center;
+	position: relative;
+	max-width: 100%;
+	height: auto;
+}
+
+.column {
+  float: center;
+  width: 100%;
+  padding: 10px;
+}
+
+
+.overlay {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0);
+}
+
+.call-to-action {
+	left: 70%;
+	position: absolute;
+	top: 55%;
+/*	transform: translate(-50%, -50%);*/
+}
+
+.call-to-action h1 {
+	color: #6ab446;
+}
+
+.call-to-action p {
+	color: #fff;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+.call-to-action button {
+	border: 1px solid #6ab446;
+	background: #6ab446;
+	border-radius: 0;
+	color: #fff;
+}
+
+.call-to-action button:hover {
+	border: 1px solid #fff;
+	background: #fff;
+	color: #000;
+}
+
+/*--- Destinations Page section ---*/
+
+.dcontainer {
+  position: relative;
+  background-color: #5D737E;
+}
+
+.dimage {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.dmiddle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.dcontainer:hover .dimage {
+  opacity: 0;
+}
+
+.dcontainer:hover .dmiddle {
+  opacity: 1;
+}
+
+.dtext {
+  background-color: #780116;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
+/*--- package section ---*/
+
+.package-ul {
+	padding-left: 20px !;
+}
+
+.package-container {
+	background-color: #3F4045;
+}
+
+
+/*--- feature section ---*/
+
+.features {
+	margin: 4em auto;
+	padding: none;
+	position: center;
+}
+
+.features-outlined {
+	margin: 4em auto;
+	padding: 2em;
+	position: relative;
+	background: black;
+	border: 0px solid;
+	border-radius: 30px;
+	background-clip: border-box;
+}
+
+.feature-title {
+	color: #f2f6e9;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.features img {
+	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	margin-bottom: 16px;
+}
+
+.row {
+	position: center;
+}
+
+.question-image {
+	text-align: center;
+}
+
+
+.features .form-control,
+.features input {
+	border-radius: 0;
+}
+
+.features .btn {
+	color: navy
+	margin-top: 20px;
+}
+
+.features .btn:hover {
+	background-color: white;
+	border: 1px solid #333;
+}
+
+/*--- footer ---*/
+
+.page-footer {
+	background-color: #09293B;
+	color: #f2f6e9;
+/*	padding: 60px 0 30px;*/
+}
+
+.footer-copyright {
+	color: #f2f6e9;
+	padding: 40px 0;
+}
+
+/*--- media queries ---*/
+
+@media (max-width: 576px) {
+
+	.call-to-action {
+/*		left: 0;
+		padding: 0 15px;
+		position: absolute;
+		top: 10%;
+		transform: none;
+		text-align: center;*/
+
+
+		left: 60%;
+		position: absolute;
+		top: 42%;
+/*		transform: translate(-50%, -50%);*/
+	}
+	
+	.call-to-action h1 {
+		font-size: 2em;
+	}
+	
+	.call-to-action p {
+		font-size: 1.2rem;
+	}
+	
+/*	.features {
+		margin: 0;
+	}*/
+
+}
+
+@media (max-width: 768px) {
+
+	.call-to-action {
+		left: 62%;
+		position: absolute;
+		top: 45%;
+/*		transform: translate(-50%, -50%);*/
+	}
+	
+	.call-to-action h1 {
+		font-size: 2em;
+	}
+	
+	.call-to-action p {
+		font-size: 1.2rem;
+	}
+	
+/*	.features {
+		margin: 0;
+	}*/
+
+}
+
+
+@media (max-width: 992px) {
+
+	.call-to-action {
+		left: 65%;
+		position: absolute;
+		top: 52%;
+/*		transform: translate(-50%, -50%);*/
+	}
+	
+	.call-to-action h1 {
+		font-size: 2em;
+	}
+	
+	.call-to-action p {
+		font-size: 1.2rem;
+	}
+	
+/*	.features {
+		margin: 0;
+	}*/
+
+}
+
+
+@media (max-width: 1200px) {
+
+	.call-to-action {
+		left: 65%;
+		position: absolute;
+		top: 70%;
+/*		transform: translate(-50%, -50%);*/
+	}
+	
+	.call-to-action h1 {
+		font-size: 2em;
+	}
+	
+	.call-to-action p {
+		font-size: 1.2rem;
+	}
+	
+/*	.features {
+		margin: 0;
+	}*/
+
+}
+/*--- FAQ Page ---*/
+
+.faqHeader {
+	font-size: 27px;
+	margin: 20px;
+}
+
+.card > a{
+	text-decoration: none;
+}
+
+.mb-0 > a {
+  position: relative;
+  text-align: left;
+}
+
+.mb-0 > a:after {
+	font-family: 'Font Awesome 5 Pro';
+  	content: "\f078"; /* fa-chevron-down */
+  	position: absolute;
+  	right: 0;
+}
+
+.mb-0 > a[aria-expanded="true"]:after {
+  content: "\f077"; /* fa-chevron-up */
+}
+
+
+/*--- Who We Are Page ---*/
+
+
+.team-section .avatar img {
+	max-width: 200px;
+	height: auto;
+}
+
+.ship-card-4 {
+	background-image: url('images/opt-images/space.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	max-width: 100%;
+	height: auto;
+}
+
+.ship-card-5 {
+	background-image: url('images/opt-images/cookie.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	max-width: 100%;
+	height: auto;
+}
+
+.ship-card-6 {
+	background-image: url('images/opt-images/family.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	max-width: 100%;
+	height: auto;
+}
+
+/*.ship-thumbnail-4 {
+	background-image: url('images/opt-images/8902.jpg');
+	width: 100%;
+	height: 125px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}*/
+
+.ship-thumbnail-5 {
+	background-image: url('images/opt-images/couple.jpg');
+	width: 100%;
+	height: 125px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.ship-thumbnail-6 {
+	background-image: url('images/opt-images/couple.jpg');
+	width: 100%;
+	height: 125px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.ship-caption {
+
+}
+
+
+/*.ship-thumbnail-4 {
+	background-image: url('images/opt-images/gen2.jpg');
+	width: 100%;
+	height: 125px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: none;
+}*/
